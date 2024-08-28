@@ -1,0 +1,126 @@
+body {
+    background-image: url('../img/fondo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Estilo para el header */
+header {
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.navbar-nav .nav-link {
+    color: #584fea;
+    /* Color del texto de las opciones */
+    font-weight: bold;
+    /* Texto en negrita */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffc107;
+    /* Color del texto al pasar el mouse */
+}
+
+
+h1 {
+    color: #000000;
+}
+
+select.form-control {
+    margin-bottom: 15px;
+}
+
+.offer-card {
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.offer-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.offer-card .card-header {
+    background-color: #007bff;
+    color: rgb(255, 255, 255);
+    font-size: 1.25em;
+    text-align: center;
+    padding: 10px;
+}
+
+.offer-card .card-body {
+    padding: 15px;
+}
+
+.offer-card .card-body img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.offer-card .card-text {
+    margin-bottom: 10px;
+    font-size: 0.9em;
+    color: #6c757d;
+}
+
+.validity-text {
+    font-size: 0.85em;
+    margin: 10px 15px;
+}
+
+.btn-container {
+    text-align: center;
+    padding: 15px;
+}
+
+.btn-container .btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: background-color 0.2s;
+}
+
+.btn-container .btn:hover {
+    background-color: #0056b3;
+}
+
+
+footer {
+    background-color: #343a40;
+    color: rgb(0, 0, 0);
+    padding: 40px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 20;
+}
+
+.pagination 
+{
+    margin-right: 20px;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: white;
+}
+
+.pagination .page-link {
+    color: #007bff;
+}
+
+.pagination .page-link:hover {
+    color: #000000;
+    
+}

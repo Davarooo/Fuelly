@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Metadatos -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <!-- Título de la página -->
+    <title>Detalle de Oferta</title>
+    <!-- Estilos -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/detalle-oferta.css" rel="stylesheet">
+    <!-- Script de ofertas -->
+    <script src="js/ofertas.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.png" alt="Logo" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ofertas.html">Ofertas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contacto.html">Contáctenos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="detalle-oferta">
+        <h1 id="offer-title">Detalle de Oferta</h1>
+    </div>
+
+    <!-- Contenedor principal -->
+    <div class="container">
+        <div class="row">
+            <!-- Columna principal para la imagen y la descripción -->
+            <div class="col-md-8">
+                <!-- Contenedor de la imagen de la oferta -->
+                <div class="offer-image-container">
+                    <img src="" id="offer-image" class="offer-image" alt="Imagen de la oferta">
+                </div>
+                <!-- Descripción de la oferta -->
+                <p id="offer-description" class="offer-description mt-4"></p>
+            </div>
+            <!-- Columna para los detalles de la oferta y el botón de aplicar -->
+            <div class="col-md-4">
+                <!-- Detalles de la oferta -->
+                <div class="card offer-details">
+                    <div class="card-header">
+                        Detalles de la oferta
+                    </div>
+                    <div class="card-body">
+                        <p><span>Fecha de Vigencia:</span> <span id="offer-validity"></span></p>
+                        <!-- Otros detalles de la oferta -->
+                    </div>
+                </div>
+                <!-- Botón para aplicar a la oferta -->
+                <div class="apply-button">
+                    <button class="btn btn-primary" onclick="window.print()">Aplicar a la oferta</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p class="mb-0">Derechos reservados &copy; 2024. Hecho con amor en CESDE</p>
+        </div>
+    </footer>
+
+    <!-- Script de jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+    <script>
+        // Obtener el índice de la oferta seleccionada de la URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const offerIndex = parseInt(urlParams.get('offer'));
+        // Obtener la oferta seleccionada
+        const selectedOffer = offers[offerIndex];
+        // Actualizar los elementos HTML con los detalles de la oferta
+        document.getElementById('offer-title').textContent = selectedOffer.stationName;
+        document.getElementById('offer-image').src = selectedOffer.logo;
+        document.getElementById('offer-description').textContent = selectedOffer.conditions;
+        document.getElementById('offer-validity').textContent = selectedOffer.validity.toLocaleDateString('es-ES', { day: 'numeric', month: 'long', year: 'numeric' });
+    </script>
+</body>
+
+</html>

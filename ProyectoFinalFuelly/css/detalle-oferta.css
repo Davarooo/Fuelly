@@ -1,0 +1,78 @@
+body {
+    background-image: url('../img/fondo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Estilo para el header */
+header {
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.navbar-nav .nav-link {
+    color: #584fea;
+    /* Color del texto de las opciones */
+    font-weight: bold;
+    /* Texto en negrita */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffc107;
+    /* Color del texto al pasar el mouse */
+}
+
+.detalle-oferta {
+    background-color: #584fea;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#offer-title {
+    margin-bottom: 0;
+}
+
+.offer-image-container {
+    width: 400px; /* Tamaño ligeramente más grande */
+    height: 400px; /* Tamaño ligeramente más grande */
+    overflow: hidden; /* Evita que las imágenes grandes se desborden */
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    margin: 0 auto; /* Para centrar el contenedor */
+}
+
+.offer-image {
+    max-width: 100%; /* Ajustar imagen al contenedor */
+    max-height: 100%; /* Ajustar imagen al contenedor */
+    display: block; /* Eliminar espacio adicional */
+}
+
+.offer-description {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.offer-details {
+    margin-top: 20px;
+}
+
+.offer-details p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.offer-details p span {
+    font-weight: bold;
+}
+
+.apply-button {
+    margin-top: 20px;
+    text-align: center;
+}

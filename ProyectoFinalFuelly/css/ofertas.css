@@ -1,0 +1,81 @@
+body {
+    background-image: url('../img/fondo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Estilo para el header */
+header {
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.navbar-nav .nav-link {
+    color: #584fea;
+    /* Color del texto de las opciones */
+    font-weight: bold;
+    /* Texto en negrita */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffc107;
+    /* Color del texto al pasar el mouse */
+}
+
+.offer-card {
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.offer-card img {
+    max-height: 100px;
+    object-fit: contain;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.offer-card:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+}
+
+.card-header {
+    background-color: #584fea;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1.25rem;
+}
+
+.card-body {
+    flex-grow: 1;
+}
+
+.card-text.conditions {
+    max-height: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.validity-text {
+    font-size: small;
+}
+
+.btn-container {
+    text-align: center;
+    margin-top: auto;
+}
+
+.btn-primary {
+    background-color: #584fea;
+    border-color: #584fea;
+}
+
+.btn-primary:hover {
+    background-color: #584fea;
+    border-color: #584fea;
+}

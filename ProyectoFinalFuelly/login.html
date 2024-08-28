@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <title>Fuelly</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/login.css">
+    <script src="js/ofertas.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.png" alt="Logo" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ofertas.html">Ofertas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contacto.html">Contáctenos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+        <main class="display">
+            <div class="contenedor">
+                <div class="login">
+                    <img id="loginIMG" src="/img/F-purple.jpg" alt="logo">
+                    <h2>LOGIN</h2>
+                    <form class="contenedorLogin" action="">
+                        <label for="Email">Email</label>
+                        <input class="input" type="text" placeholder="Ingrese su Email">
+                        <hr class="raya">
+                        <br>
+                        <label for="Password">Password</label>
+                        <input class="input" type="password" placeholder="Ingrese su contraseña">
+                        <hr  class="raya">
+                        <br>
+                        <button class="buttonlogin" type="submit">LOGIN</button>
+                    </form>
+                </div>
+            </div>
+            <div class="contenedor">
+                <div class="registro">
+                    <img id="loginIMG" src="/img/F-purple.jpg" alt="logo">
+                    <h2 id="regis">REGISTRARSE</h2>
+                    <form class="contenedoregistro" action="">
+                        <label for="Primer Nombre">Primer nombre</label>
+                        <input class="input2" type="text" placeholder="Nombre">
+                        <hr  class="raya">
+                        <br>
+                        <label for="Apellidos">Apellidos</label>
+                        <input class="input2" type="text" placeholder="Apellidos">
+                        <hr  class="raya">
+                        <br>
+                        <label for="Email">Email</label>
+                        <input class="input2" type="text" placeholder="Email">
+                        <hr  class="raya">
+                        <br>
+                        <label for="Contraseña">Contraseña</label>
+                        <input class="input2" type="password" placeholder="Contraseña">
+                        <hr  class="raya">
+                        <br>
+                        <label for="Tipo usuario"><b>Tipo usuario</b></label>
+                        <br>
+                        <div>
+                        <label id="uno" for="">
+                            <input type="radio" name="tipo" id="">Usuario
+                        </label>
+                        <label id="dos" for="">
+                            <input type="radio" name="tipo" id="">Empresa
+                        </label>
+                        <label id="tres" for="">
+                            <input type="radio" name="tipo" id="">Administrador
+                        </label>
+                        <br>
+                        
+                        </div>
+                        <br>
+                        <br>
+                        <button  class="buttonregistro"  type="submit">REGISTRARSE</button>
+                    </form>
+                </div>
+            </div>
+            
+        </main>
+        <footer class="bg-dark text-white text-center py-4">
+            <div class="container">
+                <p class="mb-0">Derechos reservados &copy; 2024. Hecho con amor en CESDE</p>
+            </div>
+        </footer>

@@ -1,0 +1,134 @@
+body {
+    background-image: url('../img/fondo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Estilo para el header */
+header {
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.navbar-nav .nav-link {
+    color: #584fea;
+    /* Color del texto de las opciones */
+    font-weight: bold;
+    /* Texto en negrita */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffc107;
+    /* Color del texto al pasar el mouse */
+}
+
+.contenedor {
+    margin: 50px 190px;
+    position: relative;
+    width: 1200px;
+    height: 600px;
+    border-radius: 20px;
+    background-color:#621e75;
+    overflow: hidden;
+    box-shadow: 0px 2px 15px rgb(0, 0, 0);
+}
+h1{
+    position: absolute;
+    color: white;
+    font-family: sans-serif;
+    font-size: 25px;
+    top: 40px;
+    left: 18%;
+}
+.contenedor h3{
+    color: white;
+    position: absolute;
+    font-family: sans-serif;
+    font-weight: 30px;
+    font-size: 20px;
+    top: 70px;
+    left: 150px;
+}
+.dato {
+    position: relative;
+    top: 140px;
+    left: 155px;
+    margin-bottom: 15px;
+}
+.dato input{
+    background-color: rgba(196, 160, 231, 0.295);
+    width: 290px;
+    height: 35px;
+    color:  rgba(255, 255, 255, 0.61);
+    border-radius: 14px;
+    border: 0;
+}
+
+::placeholder {
+    color:  rgba(255, 255, 255, 0.61);
+    border: 0;
+    text-indent: 15px;
+}
+.dato2{
+    position: relative;
+    top: 170px;
+    left: 155px;
+    width: 290px;
+    border-bottom: 1px solid  rgba(255, 255, 255, 0.61);
+}
+.dato2 input{
+    background-color: #621e75;
+    width: 290px;
+    height: 35px;
+    color: rgba(255, 255, 255, 0.61);
+    border: 0;
+}
+.dato3{
+    position: absolute;
+    top: 380px;
+    left: 155px;
+    width: 20px;
+}
+.dato3 input{
+    width: 290px;
+    height: 35px;
+    background-color: aliceblue;
+    color: black;
+    border-radius: 14px;
+}
+.dato3 ::placeholder {
+    color: black;
+    border: 0;
+    text-indent: 90px;
+}
+.contactomail{
+    position: absolute;
+    bottom: 110px;
+    left: 225px;
+}
+.contactomail h4{
+    color: white;
+    font-size: 15px;
+}
+.telefonofuelly{
+    position: absolute;
+    bottom: 85px;
+    left: 250px;
+}
+.telefonofuelly h4{
+    color: white;
+    font-size: 15px;
+}
+.conteimg{
+    position: absolute;
+    box-shadow: 0px 2px 15px rgb(0, 0, 0);
+    max-width: 100%;
+}
+.imagen{
+    position: relative;
+    left: 580px;
+    width: 650px;
+    height: 600px;
+}
